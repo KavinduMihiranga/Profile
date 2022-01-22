@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile</title>
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <style>
+        .logo {
+            width: 25%;
+            position: relative;
+            top: 10px;
+            box-shadow: 10px 14px 12px 1px #02181f;
+        }
+
+        .navigation {
+            list-style: none;
+            display: inline-block;
+            background-color: white;
+            box-shadow: 10px 14px 12px 1px #02181f;
+            left: 20%;
+        }
+
+        .navigationList {
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            cursor: pointer;
+            position: relative;
+            display: inline;
+            margin-right: 25px;
+            font-size: 30px;
+            right: 0;
+            top: 0;
+        }
+
+        .backgroundImg {
+            width: 100%;
+        }
+
+        .homePaige {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .hello {
+            position: absolute;
+            top: 10%;
+            left: 20%;
+            font-size: 500%;
+        }
+
+        .programmer {
+            position: absolute;
+            top: 22%;
+            left: 30%;
+            font-size: 200%;
+
+        }
+
+        .status {
+            position: absolute;
+            top: 25%;
+            left: 10%;
+            font-size: 180%;
+            width: 25%;
+        }
+
+        #fbIcon {
+            position: absolute;
+            top: 12%;
+            left: 2%;
+            width: 5%;
+
+        }
+
+        #whIcon {
+            position: absolute;
+            top: 25%;
+            left: 2%;
+            width: 5%;
+
+        }
+
+        #emIcon {
+            position: absolute;
+            top: 38%;
+            left: 2%;
+            width: 5%;
+
+        }
+
+        #liIcon {
+            position: absolute;
+            top: 50%;
+            left: 2%;
+            width: 5%;
+
+        }
+
+        #inIcon {
+            position: absolute;
+            top: 62%;
+            left: 2%;
+            width: 5%;
+
+        }
+
+        #heading {
+            position: relative;
+        }
+
+
+        #aboutheading {
+            width: 100%;
+            height: 8%;
+            background-color: aqua;
+            position: relative;
+            font-size: xxx-large;
+            box-shadow: 10px 14px 12px 1px #02181f;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            text-align: center;
+
+        }
+
+        #article {
+            top: 250%;
+            position: absolute;
+        }
+
+        .no {
+            text-decoration: none;
+        }
+
+        #profilePic {
+            width: 50%;
+            position: absolute;
+            top: 100%;
+            right: 0%;
+        }
+
+        #aboutPre {
+            top: 150%;
+            font-size: xx-large;
+            position: absolute;
+        }
+
+        #skill {
+            position: relative;
+        }
+
+        #skillHeading {
+            width: 100%;
+            height: 8%;
+            background-color: aqua;
+            position: relative;
+            font-size: xxx-large;
+            box-shadow: 10px 14px 12px 1px #02181f;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            text-align: center;
+            top: 700px;
+        }
+        div.gallery{
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 200px;
+            top: 800px;
+            position: relative;
+
+        }
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        @media all and (min-width: 320px)and (max-width: 425px) {
+            .logo {
+                width: 80%;
+                left: 0;
+                right: 0;
+                margin: auto;
+                position: absolute;
+                padding: 0;
+            }
+
+            .navigation {
+                font-size: 25px;
+                display: table-caption;
+                top: 28px;
+                position: relative;
+            }
+
+            #profilePic {
+                width: 40%;
+                top: 150%;
+            }
+
+            #aboutPre {
+                font-size: xx-small;
+            }
+
+            .hello {
+                font-size: 100%;
+            }
+
+            .programmer {
+                font-size: 12px;
+                left: 35%;
+                top: 20%;
+            }
+
+            .status {
+                font-size: 8px;
+                top: 28%;
+                left: 0%;
+
+            }
+
+            #skillHeading {
+                top: 200px;
+            }
+            div.gallery{
+                top: 230px;
+                left: 20%;
+            }
+        }
+
+        @media all and (min-width: 425px)and (max-width: 768px) {
+            .logo {
+                width: 80%;
+                left: 12%;
+                right: 0;
+                margin: auto;
+                position: relative;
+                padding: 0;
+            }
+
+            .navigation {
+                font-size: 20px;
+                display: table-caption;
+                position: relative;
+            }
+
+            #profilePic {
+                width: 40%;
+                top: 150%;
+            }
+
+            #aboutPre {
+                font-size: xx-small;
+            }
+
+            .hello {
+                font-size: 100%;
+            }
+
+            .programmer {
+
+                font-size: 15px;
+                top: 18%;
+                left: 32%;
+
+            }
+
+            .status {
+                font-size: 60%;
+                left: 5%;
+                top: 22%;
+            }
+
+            #skillHeading {
+                top: 200px;
+            }
+            div.gallery{
+                top: 230px;
+                left: 25%;
+            }
+        }
+
+        @media all and (min-width: 768px)and (max-width: 1024px) {
+            .logo {
+                width: 50%;
+                left: 22%;
+                right: 0;
+                margin: auto;
+                position: relative;
+                padding: 0;
+            }
+
+            .navigation {
+                font-size: 36px;
+                position: relative;
+                left: 5%;
+            }
+
+            #profilePic {
+                width: 50%;
+            }
+
+            #aboutPre {
+                font-size: large;
+            }
+
+            .hello {
+                font-size: 100%;
+            }
+
+            .programmer {
+
+                font-size: 80%;
+                left: 23%;
+
+            }
+
+            .status {
+                font-size: 100%;
+                top: 25%;
+            }
+
+            #skillHeading {
+                top: 400px;
+            }
+
+            div.gallery{
+                top: 450px;
+                left: 8%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<img alt="logo" class="logo" src="assets/images/logo2.png">
+<ul class="navigation">
+    <button class="navigationList" id="home">Home</button>
+    <button class="navigationList" id="about">About</button>
+    <button class="navigationList" id="skill">Skill</button>
+    <button class="navigationList" id="project">Project</button>
+    <button class="navigationList" id="education">Education</button>
+    <button class="navigationList" id="contact">Contact</button>
+</ul>
+
+<div class="homePaige">
+    <img alt="image" class="backgroundImg" id="backgroundImg" src="assets/images/background_home.jpeg">
+    <div class="hello">
+        Hello '
+        I'm Kavindu Mihiranga
+    </div>
+    <div class="programmer">
+        Programmer,Designer & Developer
+    </div>
+    <div class="status">
+    <pre id="disc">
+        I am Kavindu Mihiranga In SriLanka. 
+        I am currently Learning about Software development In<abbr
+            title="Institute of Software Engineering (Panadura)">IJSE</abbr>.
+        I currently compleatingsecond semester.
+        I also have knowledge of Java,Web development,
+        UI/UX developing,database Management,hibernate and framework.
+    </pre>
+    </div>
+    <img alt="facebook icon" class="fwicon" id="fbIcon" src="assets/images/facebook.png">
+    <!-- image -->
+    <img alt="whatsupp icon" class="fwicon" id="whIcon" src="assets/images/whatsapp.png">
+    <!-- image -->
+    <img alt="email icon" class="fwicon" id="emIcon" src="assets/images/gmail.png">
+    <!-- image -->
+    <img alt="linkedin icon" class="fwicon" id="liIcon" src="assets/images/linkedin.png">
+    <!-- image -->
+    <img alt="instergram icon" class="fwicon" id="inIcon" src="assets/images/instergram.png">
+
+</div>
+<div id="heading">
+    <div id="aboutheading"> About</div>
+    <article id="article">
+        <pre id="aboutPre">
+        Name      : B.A. Kavindu Mihiranga Dias
+        Address   : Polwatta,
+                    Kekulandala,
+                    Agalawatta.
+        Birthday  : <time datetime="1999-03-09">1999-03-09</time>
+        School    : Mihindu Central College
+        Phone No  : <a 0783688031 class="no" href="tell:+94783688031"><abbr
+                title="Click to Call">+94765453914</abbr></a>
+        Phone No  : <a 0765453914 class="no" href="tell:+94765453914"><abbr
+                title="Click to Call">+94765453914</abbr></a>
+            <a class="no" download="assets/CV" href="assets/CV" id="cv">Download CV</a>
+        </pre>
+    </article>
+    <img alt="profile picture" id="profilePic" src="assets/images/prf.png">
+
+</div>
+<div id="skillDiv"></div>
+<div id="skillHeading">Skill</div>
+
+<div class="gallery">
+    <a href="assets/images/html.png" target="blank">
+        <img alt="html icon" id="htmlImg" src="assets/images/html.png">
+    </a>
+    <div class="desc">JAVA</div>
+</div>
+
+<div class="gallery">
+    <a href="assets/images/java.png" target="blank">
+        <img alt="java icon" id="javaImage" src="assets/images/java.png">
+    </a>
+    <div class="desc">JAVA</div>
+</div>
+
+<div class="gallery">
+    <a href="assets/images/mysql.png" target="blank">
+        <img alt="mysql icon" id="mySqlImg" src="assets/images/mysql.png">
+    </a>
+    <div class="desc">mysql</div>
+</div>
+
+<div class="gallery">
+    <a href="assets/images/js.png" target="blank">
+        <img alt="java icon" id="jsImg" src="assets/images/js.png">
+    </a>
+    <div class="desc">js</div>
+</div>
+
+
+<div class="gallery">
+    <a href="assets/images/css.png" target="blank">
+        <img alt="css icon" id="cssImg" src="assets/images/css.png">
+    </a>
+    <div class="desc">css</div>
+</div>
+
+<div class="gallery">
+    <a href="assets/images/photoshop.png" target="blank">
+        <img alt="java icon" id="photoshopImg" src="assets/images/photoshop.png">
+    </a>
+    <div class="desc">photoshop</div>
+</div>
+
+<div class="gallery">
+    <a href="assets/images/ilustraterr.png" target="blank">
+        <img alt="ilustrater icon" id="ilustraterrImg" src="assets/images/ilustraterr.png">
+    </a>
+    <div class="desc">ilustrater</div>
+</div>
+
+</body>
+</html>
