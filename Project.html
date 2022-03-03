@@ -32,11 +32,42 @@
 
         div.galleryProject img {
             width: 100%;
-            height: auto;
+            height: 400px;
         }
         div.desc2 {
             padding: 5px;
             text-align: center;
+        }
+
+        @media all and (min-width: 320px)and (max-width: 425px){
+            div.galleryProject img {
+                width: 100%;
+                height: 200px;
+            }
+            div.galleryProject{
+                width: 250px;
+
+            }
+        }
+        @media all and (min-width: 425px)and (max-width: 768px){
+            div.galleryProject img {
+                width: 100%;
+                height: 300px;
+            }
+            div.galleryProject{
+                width: 350px;
+
+            }
+        }
+        @media all and (min-width: 768px)and (max-width: 1024px){
+            div.galleryProject img {
+                width: 100%;
+                height: 300px;
+            }
+            div.galleryProject{
+                width: 400px;
+
+            }
         }
     </style>
 </head>
@@ -115,6 +146,25 @@
         <img alt="ACase4 icon" id="ACase4Img" src="assets/images/ACase4.png">
     </a>
     <div class="desc2">Animation Case4</div>
+</div>
+<div class="galleryProject SPA">
+    <a href="myProjects/spa/posSystem/index2.html" target="blank">
+        <img alt="posSystemImg icon" id="posSystemImg" src="assets/images/posSystemImage.PNG">
+    </a>
+    <div class="desc2">posSystem SPA</div>
+</div>
+
+<div class="galleryProject Kitt_Assigment">
+    <a href="myProjects/js/Kitt_Assignment/index.html" target="blank">
+        <img alt="kitt_AssignmentImg icon" id="kitt_AssignmentImg" src="assets/images/kittImage.PNG">
+    </a>
+    <div class="desc2">kitt_Assignment</div>
+</div>
+<div class="galleryProject Que_Assignment">
+    <a href="myProjects/js/Que_Assignment/index.html" target="blank">
+        <img alt="que_AssignmentImg icon" id="que_AssignmentImg" src="assets/images/queImage.PNG">
+    </a>
+    <div class="desc2">Que_Assignment</div>
 </div>
 
 </body>

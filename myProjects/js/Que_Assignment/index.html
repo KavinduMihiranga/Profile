@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/cssStyle/cssStyle.css">
+    <title>Queue</title>
+</head>
+<body>
+<section id="divSection">
+    <div id="div1" class="div"></div>
+    <hr>
+    <section id="boxSection">
+        <div id="div2" class="div"></div>
+        <div id="div3" class="div"></div>
+        <div id="div4" class="div"></div>
+        <div id="div5" class="div"></div>
+
+    </section>
+
+    <hr>
+    <div id="div6" class="div"></div>
+
+</section>
+<button id="btnStart">Click</button>
+
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<!--<script src="assets/jsScript/jsScript.js"></script>-->
+
+<script>
+    $(document).ready(function () {
+        $("#btnStart").click(function() {
+            var divx=$('#div1');
+            if (divx.backgroundColor = "purple") {
+
+                $("#div1").css({'backgroundColor': 'blue'});
+                $("#div2").css({'backgroundColor': 'purple'});
+                $("#div3").css({'backgroundColor': 'antiquewhite'});
+                $("#div4").css({'backgroundColor': 'green'});
+                $("#div5").css({'backgroundColor': 'yellow'});
+                $("#div6").css({'backgroundColor': 'red'});
+
+            }
+            if (divx.backgroundColor = "blue") {
+                $("#div1").css({'backgroundColor': 'purple'});
+                $("#div2").css({'backgroundColor': 'antiquewhite'});
+                $("#div3").css({'backgroundColor': 'green'});
+                $("#div4").css({'backgroundColor': 'yellow'});
+                $("#div5").css({'backgroundColor': 'red'});
+                $("#div6").css({'backgroundColor': 'blue'});
+            }
+            if (divx.backgroundColor = "antiquewhite") {
+                $("#div1").css({'backgroundColor': 'green'});
+                $("#div2").css({'backgroundColor': 'yellow'});
+                $("#div3").css({'backgroundColor': 'red'});
+                $("#div4").css({'backgroundColor': 'blue'});
+                $("#div5").css({'backgroundColor': 'purple'});
+                $("#div6").css({'backgroundColor': 'antiquewhite'});
+            }
+
+        })
+
+    })
+</script>
+</body>
+</html>

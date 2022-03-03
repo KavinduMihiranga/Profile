@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Kitt</title>
+    <style>
+        #divContainer{
+            width: 750px;
+            height: 150px;
+        }
+        div{
+            position: relative;
+        }
+    </style>
+
+</head>
+<body>
+<section class="container mt-5">
+    <div class="container ">
+        <div id="divContainer" class="row ">
+            <div id="div1" class="col" style="background-color: red " ></div>
+            <div id="div2" class="col" style="background-color: green"></div>
+            <div id="div3" class="col" style="background-color: purple"></div>
+            <div id="div4" class="col" style="background-color: yellow"></div>
+            <div id="div5" class="col" style="background-color: orange"></div>
+            <div id="div6" class="col" style="background-color: blue"></div>
+        </div>
+    </div>
+    <button data-bs-target="#" type="button" class="bg-info , w-25 ,mx-5"  id="btnStart"> Start</button>
+    <button data-bs-target="#" type="button" class="bg-danger , w-25 ,mx-5"  id="btnStop"> Stop</button>
+</section>
+
+
+    <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btnStart").click(function() {
+                // var divx=$('#div1');
+                // if (divx.backgroundColor = "purple") {
+                //
+                //     $("#div1").animate({left: "+=200"},200);
+                //     $("#div2").animate({left: "+=200"},200);
+                //     $("#div3").animate({left: "+=200"},200);
+                //     $("#div4").animate({left: "+=200"},200);
+                //     $("#div5").animate({left: "+=200"},200);
+                //     $("#div6").animate({left: "-=550"},200);
+                //
+                // }
+
+                setInterval(callMe,1000)
+
+            })
+
+        });
+        function callMe(){
+
+            var colors=["purple","green","yellow","black"];
+            for (let i=0;i<colors.length-1;i++) {
+                $("#div1").background(i);
+                $("#div2").background(i);
+                $("#div3").background(i);
+                $("#div4").background(i);
+                $("#div5").background(i);
+                $("#div6").background(i);
+            }
+        }
+        $(document).ready(function () {
+            $("#btnStop").click(function() {
+                // var divx=$('#div1');
+                // if (divx.backgroundColor = "purple") {
+                //
+                //     $("#div1").animate({left: "+=200"},200);
+                //     $("#div2").animate({left: "+=200"},200);
+                //     $("#div3").animate({left: "+=200"},200);
+                //     $("#div4").animate({left: "+=200"},200);
+                //     $("#div5").animate({left: "+=200"},200);
+                //     $("#div6").animate({left: "-=550"},200);
+
+                // }
+
+            })
+
+        })
+    </script>
+    
+</body>
+</html>
